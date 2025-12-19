@@ -11,6 +11,14 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
+    <context:property-placeholder />
     <context:component-scan base-package="pl.microblog" />
     <context:annotation-config />
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.hsqldb.jdbc.JDBCDriver" />
+        <property name="url" value="jdbc:hsqldb:mem:sos" />
+        <property name="username" value="${DB_USERNAME:sa}" />
+        <property name="password" value="${DB_PASSWORD:}" />
+    </bean>
 </beans>
