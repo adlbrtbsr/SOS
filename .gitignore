@@ -36,16 +36,6 @@ nbdist/
 # IDE (VS Code)
 .vscode/
 
-# HSQLDB
-*.lck
-*.tmp
-*.log
-*.properties
-*.script
-*.data
-*.backup
-*.lobs
-
 # OS Specific
 .DS_Store
 Thumbs.db
