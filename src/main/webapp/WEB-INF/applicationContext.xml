@@ -15,7 +15,7 @@
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
     <context:property-placeholder />
-    <context:component-scan base-package="pl.microblog" />
+    <context:component-scan base-package="pl.wwsis.sos" />
     <context:annotation-config />
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -29,7 +29,7 @@
 
     <bean id="entityManagerFactoryBean" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="packagesToScan" value="models" />
+        <property name="packagesToScan" value="pl.wwsis.sos.model" />
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
                 <property name="showSql" value="false" />

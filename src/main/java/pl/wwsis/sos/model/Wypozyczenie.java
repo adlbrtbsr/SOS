@@ -1,4 +1,4 @@
-package models;
+package pl.wwsis.sos.model;
 
 import javax.persistence.*;
 import java.util.Date;
