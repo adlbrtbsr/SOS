@@ -1,3 +1,4 @@
+
 INSERT INTO Uzytkownik (login, email, haslo_hash, status_konta, data_rejestracji)
 VALUES ('student1', 'student1@ati.edu.pl', 'hash123', 'AKTYWNE', CURRENT_DATE);
 
@@ -34,5 +35,5 @@ VALUES (1, 1, CURRENT_DATE, DATE '2026-01-15', 'WYPOZYCZONE');
 INSERT INTO Zajecia (id_grupy, id_semestru, dzien_tygodnia, godzina_od, godzina_do, sala)
 VALUES (1, 1, 2, TIME '10:00', TIME '11:30', 'A12');
 
-INSERT INTO PowiadomieniePlan (id_studenta, tresc, data_wyslania)
+INSERT INTO Powiadomienie (id_studenta, tresc, data_wyslania)
 VALUES (1, 'Zajęcia odwołane', CURRENT_TIMESTAMP);
