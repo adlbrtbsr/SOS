@@ -1,6 +1,6 @@
 package pl.wwsis.sos.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "student")
@@ -62,3 +62,30 @@ public class Student {
     }
 
     public void setImie(String imie) {
+	this.imie = imie;
+    }
+
+public String getNazwisko() {
+    return nazwisko;
+}
+
+public void setNazwisko(String nazwisko) {
+    this.nazwisko = nazwisko;
+}
+
+public String getKierunek() {
+    return kierunek;
+}
+
+public void setKierunek(String kierunek) {
+    this.kierunek = kierunek;
+}
+
+public Integer getSemestrAktualny() {
+    return semestrAktualny;
+}
+
+public void setSemestrAktualny(Integer semestrAktualny) {
+    this.semestrAktualny = semestrAktualny;
+}
+}
